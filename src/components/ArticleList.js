@@ -9,7 +9,7 @@ class ArticleList extends Component {
 
     render() {
         const { articles, isOpen, openItem } = this.props
-
+console.log('#####', articles);
         const articleItems = articles.map((article) => <li key={article.id}>
             <Article article = {article}
                      isOpen = {isOpen(article.id)}
